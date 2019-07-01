@@ -1,0 +1,102 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "taschenrechner",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddIntent",
+                    "slots": [
+                        {
+                            "name": "firstnum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondnum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "addiere {firstnum} und {secondnum}",
+                        "was ist {firstnum} plus {secondnum}",
+                        "was ist der ergebnis der addition von {firstnum} und {secondnum}"
+                    ]
+                },
+                {
+                    "name": "SubstractIntent",
+                    "slots": [
+                        {
+                            "name": "secondnum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "firstnum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "was ist {firstnum} miuns {secondnum}",
+                        "subtrahiere {secondnum} von {firstnum}",
+                        "was ist das ergebnis der subtraktion von {secondnum} und {firstnum}"
+                    ]
+                },
+                {
+                    "name": "MultiplyIntent",
+                    "slots": [
+                        {
+                            "name": "firstnum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondnum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "multipliziere {firstnum} und {secondnum}",
+                        "was ist {firstnum} mal {secondnum}",
+                        "was ist das ergebnis der multiplikation von {firstnum} und {secondnum}"
+                    ]
+                },
+                {
+                    "name": "DivideIntent",
+                    "slots": [
+                        {
+                            "name": "secondnum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "firstnum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "dividiere {secondnum} von {firstnum}",
+                        "was ist {firstnum} geteilt durch {secondnum}",
+                        "was ist das ergebnis der division von {secondnum} von {firstnum}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
